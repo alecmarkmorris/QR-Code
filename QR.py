@@ -1,4 +1,11 @@
 import segno
 
+#create new QR to a website
 qrcode = segno.make_qr("alecandalli.com")
-qrcode.save("basic_qrcode.png")
+
+#Save QR to a png
+qrcode.save(
+    "wide_border_qrcode.png",
+    scale=15,
+    border=1,
+)
